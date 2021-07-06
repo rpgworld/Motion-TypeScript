@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotionApp</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0332f6a4de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#">MOTION</a>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">
+            <i class="fab fa-youtube"></i>
+            <span>IMAGE</span>
+          </li>
+          <li class="navbar__menu__item">
+            <i class="far fa-image"></i>
+            <span>VIDEO</span>
+          </li>
+          <li class="navbar__menu__item">
+            <i class="far fa-sticky-note"></i>
+            <span>NOTE</span>
+          </li>
+          <li class="navbar__menu__item">
+            <i class="far fa-list-alt"></i>
+            <span>TASK</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+      <section id="1" class="board">
+        <div class="vedio">
+          <iframe
+            class="vedio__left"
+            id="player"
+            type="text/html"
+            src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+            frameborder="0"
+          ></iframe>
+          <div class="vedio__right">
+            <p class="text-title">Title</p>
+            <textarea class="text-content">
+              Lorem, ipsum dolor sit amet consectetur 
+            </textarea>
+          </div>
+        </div>
+        <button class="board__delete-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </section>
+      <section id="2" class="board">
+        <div class="image">
+          <img class="image__left" src="https://picsum.photos/300/200" />
+          <div class="image__right">
+            <p class="text-title">Title</p>
+            <textarea class="text-content">
+              Lorem, ipsum dolor sit amet consectetur 
+            </textarea>
+          </div>
+        </div>
+        <button class="board__delete-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </section>
+      <section id="3" class="board">
+        <div class="note">
+          <div class="text-title">Note</div>
+          <p class="text-content">Note Test</p>
+        </div>
+        <button class="board__delete-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </section>
+      <section id="4" class="board">
+        <div class="task">
+          <div class="text-title">Todo</div>
+          <p class="text-content">
+            <input type="checkbox" checked />
+            <label for="scales">Todo Test</label>
+          </p>
+        </div>
+        <button class="board__delete-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>ⓒ Copyright by Dream Coding Academy All rights reversed</footer>
+  </body>
+</html>

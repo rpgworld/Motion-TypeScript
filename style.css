@@ -1,0 +1,223 @@
+/* Global */
+:root {
+  --bg-main-color: #00000080;
+  --bg-accent-color: #2d2d2d;
+  --accent-color: #f64435;
+  --text-accent-color: #ffe498;
+  --text-edit-bg-color: #575757;
+  --border-color: #3f3f3f;
+  --shadow-color: #202020;
+  --document-bg-color: #68686850;
+  --component-bg-gradient: radial-gradient(
+    circle,
+    #646464e6 0%,
+    #363636e6 100%
+  );
+  --smokywhite: #dddbd8;
+  --black: #000000;
+  --translucent-black: #00000099;
+
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 22px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+  --size-app-width: 800px;
+
+  /* board size */
+  --size-board-width: 750px;
+  --size-board-height: 200px;
+  --size-board-content: 700px;
+  --size-board-image: 350px;
+  --size-board-video: 350px;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+/* header */
+header {
+  background-color: #00000090;
+  width: var(--size-app-width);
+  margin: auto;
+}
+
+/* nav */
+.navbar {
+  text-align: center;
+}
+
+.navbar__logo {
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+
+.navbar__logo a {
+  color: var(--accent-color);
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.navbar__menu__item {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+/* board */
+.content {
+  /* background-color: black; */
+  width: var(--size-app-width);
+  margin: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.board {
+  background: var(--document-bg-color);
+  background: var(--component-bg-gradient);
+  margin: 10px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  width: var(--size-board-width);
+  height: var(--size-board-height);
+}
+
+.board__delete-btn {
+  font-size: var(--font-medium);
+  color: var(--accent-color);
+  margin: 5px;
+}
+
+.text-title {
+  color: var(--text-accent-color);
+  font-weight: bold;
+  font-size: var(--font-medium);
+}
+
+.text-content {
+  /* color: var(--tex */
+  font-size: var(--font-small);
+}
+
+.board .image,
+.board .vedio {
+  display: flex;
+  /* background-color: red; */
+  width: var(--size-board-content);
+}
+
+.board .note,
+.board .task {
+  /* background-color: red; */
+  width: var(--size-board-content);
+  padding: 0px 10px;
+}
+
+/* Youtube */
+.board .vedio .vedio__left {
+  width: var(--size-board-video);
+}
+
+.board .vedio .vedio__right {
+  text-align: center;
+  width: 40%;
+}
+
+.board .vedio .vedio__right textarea {
+  height: 130px;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: transparent;
+}
+
+/* Image */
+.board .image .image__left {
+  width: var(--size-board-image);
+}
+
+.board .image .image__right {
+  text-align: center;
+  width: 40%;
+}
+
+.board .image .image__right textarea {
+  height: 130px;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: transparent;
+}
+
+/* footer */
+footer {
+  background-color: #00000090;
+  width: var(--size-app-width);
+  margin: auto;
+  color: var(--color-white);
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
